@@ -11,7 +11,8 @@ function ChatHeader() {
                     <ChannelName>
                         # clever
                     </ChannelName>
-                    <StarBorderIcon style={{ color: "white"}}/>
+                    {/* <StarBorderIcon style={{ color: "white"}}/> */}
+                    <StarBorderIcon />
                 </Channel>
                 <Tag>
                     Company wide announcements and work based matters
@@ -33,7 +34,7 @@ export default ChatHeader
 const Container = styled.div`
     width: 100%;
     height: 74px;
-    box-shadow: 0px 1px 3px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,8 +50,6 @@ const ChannelName = styled.div`
     padding-right: 3px;
     font-size: 20px;
     font-weight: bold; 
-    color: #fff; 
-    fill: #fff;
 `
 const Tag = styled.div`
     font-size: 13px;
@@ -62,7 +61,6 @@ const Details = styled.div`
     align-items: center;
     padding-right: 20px;
     cursor: pointer;
-    color: #fff;
 `
 const Name = styled.div`
     padding-right: 6px;

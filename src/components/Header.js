@@ -30,7 +30,8 @@ function header(props) {
 export default header
 
 const Container = styled.div`
-    background: rgb(0, 0, 0);
+    // background: rgb(0, 0, 0);
+    background: #350D36;
     color: #fff;
     display: flex;
     justify-content: center;
